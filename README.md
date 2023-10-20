@@ -1,10 +1,10 @@
 # Layer8 - NET2GRID
 
 **Team Members:**
-- Gonçalo Cunha (link to GitHub profile)
-- Leonardo (link to GitHub profile)
-- Ricardo Graça (link to GitHub profile)
-- Tiago Godinho (link to GitHub profile)
+- Gonçalo Cunha (https://github.com/GCunha23)
+- Leonardo Pinto (https://github.com/LeonardoPintoFigueira)
+- Ricardo Graça (https://github.com/RicardoMachadoGraca)
+- Tiago Godinho (https://github.com/tgodinhoo)
 
 ## Project Description
 
@@ -31,9 +31,18 @@ Our project has a significant impact on NET2GRID's operations, and its successfu
 
 We look forward to sharing the results of our efforts and are committed to delivering high-quality solutions for NET2GRID.
 
+## Project Documents and Visuals
+
+In this section, you will find important project documents, topologies, and the slideshow.
+
+- Team Agreement Document: https://docs.google.com/document/d/13lWnvTM5l-BTSpJY-rEMBcu6ipU0RsfO3S3Q60KJiR4/edit?usp=sharing
+- System Selection Document: https://docs.google.com/document/d/1pB4qScaslbbIOuWpKQZvY0H5YKX3mXrske9wSjhn1MA/edit?usp=sharing
+- Topologies and Visuals: (link to the visuals)
+- Project Slideshow: https://docs.google.com/presentation/d/13u5XcHlH44s94CzOA7cUPZIayz7xjMISQ1yTCgixnPg/edit?usp=sharing
+
 ## Project Management
 
-We are using Jira (link to the tool) to manage tasks, assignments, and deadlines.
+We are using Jira (https://layer8.atlassian.net/jira/core/projects/NET/board) to manage tasks, assignments, and deadlines.
 
 ## Standard Operating Procedures (SOPs)
 
@@ -48,7 +57,7 @@ Please feel free to explore our documentation to understand our project workflow
 ## Contact Us
 
 If you have any questions or need further information, please don't hesitate to contact us:
-- [Team Member 1's LinkedIn Profile](link to LinkedIn)
-- [Team Member 2's LinkedIn Profile](link to LinkedIn)
-- [Team Member 3's LinkedIn Profile](link to LinkedIn)
-- [Team Member 4's LinkedIn Profile](link to LinkedIn)
+- Gonçalo Cunha (https://www.linkedin.com/in/goncalocunha23/)
+- Leonardo Pinto (link to LinkedIn)
+- Ricardo Graça (link to LinkedIn)
+- Tiago Godinho (https://www.linkedin.com/in/tgodinho13/)
