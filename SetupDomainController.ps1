@@ -12,3 +12,9 @@ New-NetIPAddress -IPAddress $IPAddress -PrefixLength 24 -InterfaceAlias (Get-Net
 
 # Verify DNS configuration
 Resolve-DnsName $DomainName
+
+# Rename the computer
+Rename-Computer -NewName "NET2GRID"
+
+# Install AD-Domain-Services
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
