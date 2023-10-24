@@ -180,3 +180,26 @@ foreach ($user in $userInfo) {
     # Create the user
     New-ADUser -Name $name -DisplayName $name -SamAccountName $name -Title $function -Department $department -AccountPassword (ConvertTo-SecureString "ABCdef123" -AsPlainText -Force) -Enabled $true
 }
+
+# Import the Active Directory module
+Import-Module ActiveDirectory
+
+# Set variables for forest and domain names
+$forestName = "NET2GRID.local"
+$domainName = "net2grid"
+
+# Set the Directory Services Restore Mode (DSRM) password
+$dsrmPassword = ConvertTo-SecureString "DSRM_Password" -AsPlainText -Force
+
+# Promote the server to a Domain Controller and create the forest
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+Install-ADDSForest -DomainName $domainName -DomainNetbiosName $domainName -ForestMode Win2016 -DomainMode Win2016 -InstallDns -Force -SafeModeAdministratorPassword $dsrmPassword
+
+# Create OUs
+New-ADOrganizationalUnit -Name "Sales" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Marketing" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CyberDepartment" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Financial" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "HR" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "IT" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CEO" -Path "DC=net2grid,DC=local"
