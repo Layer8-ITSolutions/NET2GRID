@@ -195,7 +195,7 @@ $userInfo = @(
         Department = "Sales"
     }
 )
-# Loop through the user information and create the users
+# Create users accounts based on the provided information
 foreach ($user in $userInfo) {
     $name = $user.Name
     $function = $user.Function
