@@ -33,3 +33,11 @@ $dsrmPassword = ConvertTo-SecureString "DSRM_Password" -AsPlainText -Force
 Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName $domainName -DomainNetbiosName $domainName -ForestMode Win2016 -DomainMode Win2016 -InstallDns -Force -SafeModeAdministratorPassword $dsrmPassword
 
+# Create OUs
+New-ADOrganizationalUnit -Name "Sales" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Marketing" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CyberDepartment" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Financial" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "HR" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "IT" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CEO" -Path "DC=net2grid,DC=local"
