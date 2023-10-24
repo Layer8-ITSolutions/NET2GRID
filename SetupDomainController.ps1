@@ -18,3 +18,18 @@ Rename-Computer -NewName "NET2GRID"
 
 # Install AD-Domain-Services
 Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+
+# Import the Active Directory module
+Import-Module ActiveDirectory
+
+# Set variables for forest and domain names
+$forestName = "NET2GRID.local"
+$domainName = "net2grid"
+
+# Set the Directory Services Restore Mode (DSRM) password
+$dsrmPassword = ConvertTo-SecureString "DSRM_Password" -AsPlainText -Force
+
+# Promote the server to a Domain Controller and create the forest
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+Install-ADDSForest -DomainName $domainName -DomainNetbiosName $domainName -ForestMode Win2016 -DomainMode Win2016 -InstallDns -Force -SafeModeAdministratorPassword $dsrmPassword
+
