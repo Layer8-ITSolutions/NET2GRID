@@ -1,3 +1,6 @@
+# Define the new machine name
+$NewComputerName = "NET2GRID"
+
 # Set variables for forest and domain names
 $forestName = "NET2GRID.local"
 $domainName = "net2grid"
@@ -24,8 +27,6 @@ Set-DnsClientServerAddress -InterfaceAlias (Get-NetAdapter | Where-Object { $_.S
 # Verify DNS configuration
 Resolve-DnsName $domainName
 
-# Rename the computer
-Rename-Computer -NewName "NET2GRID"
 
 # Create OUs
 New-ADOrganizationalUnit -Name "CEO" -Path "DC=net2grid,DC=local"
@@ -55,3 +56,7 @@ foreach ($user in $userInfo) {
     # Create the user
     New-ADUser -Name $Name -DisplayName $Name -SamAccountName $Name -Title $Title -Department $Department -AccountPassword (ConvertTo-SecureString "ABCdef123" -AsPlainText -Force) -Enabled $true
 }
+
+
+# Use the Rename-Computer cmdlet to change the machine name
+Rename-Computer -NewName $NewComputerName -Force -Restart
