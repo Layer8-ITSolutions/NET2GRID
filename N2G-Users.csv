@@ -1,3 +1,32 @@
 FirstName,LastName,Username,Password,Department,Title
-Tiago,Godinho,tgodinho,Abc#123,CyberDepartment,CTO
-Leonardo,Pinto,lpinto,Abc#123,CyberDepartment,COO
+Pepper,Potts,jfoster,ABC#123,CEO,CEO N2G
+Jane,Foster,jfoster,ABC#123,Marketing,Chief Marketing Officer
+Thor,Odinson,todinson,ABC#123,Marketing,Sr Manager- Paid Media
+Brunnhilde,Valkyrie,bvalkyrie,ABC#123,Marketing,Sr Manager-SEO
+Loki,Laufeyson,llaufeyson,ABC#123,Marketing,Sr Manager- Comunications
+Philip,Coulson,pcoulson,ABC#123,Financial,Chief Financial Officer
+Peter,Quill,pquill,ABC#123,Financial,Senior Auditor
+Yondu,Udonta,yudonta,ABC#123,Financial,Sr Accountant
+Rocket,Racoon,rracoon,ABC#123,Financial,Jr Accountant
+Iam,Groot,igroot,ABC#123,Financial,AP Administrator
+Bruce,Banner,bbanner,ABC#123,HR,Exec VP
+Nick,Fury,nfury,ABC#123,HR,Director- Talent Acquisition
+James,Rhodes,jrhodes,ABC#123,HR,Training and Development
+Philip,Coulson,pcoulson,ABC#123,HR,HR Business Partner
+Tony,Stark,tstark,ABC#123,IT,Chief Information Officer
+Hope,van Dyn,hvandyn,ABC#123,IT,Chief Technology Officer
+Hank,Pim,hpim,ABC#123,IT,Senior Engineer
+Scott,Lang,slang,ABC#123,IT,Frontend Developer
+Peter,Parker,pparker,ABC#123,IT,Backend Developer
+Natasha,Richardson,nrichardson,ABC#123,Cyber-Department,Chief Information Security Officer
+Maria,Hill,mhill,ABC#123,Cyber-Department,Director-Information Security
+Pietro,Maximoff,pmaximoff,ABC#123,Cyber-Department,Defensive Security Team
+Wanda,Maximoff,wmaximoff,ABC#123,Cyber-Department,Offensive Security Team
+Happy,Hogan,hhogan,ABC#123,Cyber-Department,Facilities Manager
+Carol,Danvers,cdanvers,ABC#123,Sales,Chief Operations Officer
+Jing,T'Challa,jtchala,ABC#123,Sales,Divisional VP-Retail West
+Peggy,Carter,pcarter,ABC#123,Sales,Regional Manager- Washington- Idaho- Montana
+Bucky,Barnes,bbarnes,ABC#123,Sales,Regional Manager- California & Oregon
+Princess,Shuri,pshuri,ABC#123,Sales,Divisional VP- Retail East
+Steve,Evans,sevans,ABC#123,Sales,Regional Manager- New York- New-Jersey- Connecticut
+Sam,Wilson,swilson,ABC#123,Sales,Regional Manager- Florida- Georgia- Carolinas
