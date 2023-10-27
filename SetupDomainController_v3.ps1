@@ -208,7 +208,7 @@ $userInfo = @(
 foreach ($user in $userInfo) {
     $firstName = $user.FirstName
     $lastName = $user.LastName
-    $name = "$firstname $lastname"
+    $name = "$firstName $lastName"
     $title = $user.Title
     $department = $user.Department
     $targetOU = "OU=$department,DC=corp,DC=net2grid,DC=com"
