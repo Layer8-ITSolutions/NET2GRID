@@ -39,17 +39,14 @@ Set-DnsClientServerAddress -InterfaceAlias $InterfaceAlias -ServerAddresses $Dns
 # Verify DNS configuration
 Resolve-DnsName $domainName
 
-# Set variable Path
-$DCPath = "DC=corp,DC=net2grid,DC=com"
-
 # Create OUs
-New-ADOrganizationalUnit -Name "Sales" -Path $DCPath
-New-ADOrganizationalUnit -Name "Marketing" -Path $DCPath
-New-ADOrganizationalUnit -Name "CyberDepartment" -Path $DCPath
-New-ADOrganizationalUnit -Name "Financial" -Path $DCPath
-New-ADOrganizationalUnit -Name "HR" -Path $DCPath
-New-ADOrganizationalUnit -Name "IT" -Path $DCPath
-New-ADOrganizationalUnit -Name "CEO" -Path $DCPath
+New-ADOrganizationalUnit -Name "Sales" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Marketing" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CyberDepartment" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "Financial" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "HR" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "IT" -Path "DC=net2grid,DC=local"
+New-ADOrganizationalUnit -Name "CEO" -Path "DC=net2grid,DC=local"
 
 # Define the user information
 $userInfo = @(
@@ -205,14 +202,11 @@ $userInfo = @(
     }
 )
 
+# Create user accounts based on the provided information
 foreach ($user in $userInfo) {
-    $firstName = $user.FirstName
-    $lastName = $user.LastName
-    $name = "$firstName $lastName"
+    $name = $user.Name
     $title = $user.Title
     $department = $user.Department
-    $targetOU = "OU=$department,DC=corp,DC=net2grid,DC=com"
-    New-ADUser -GivenName $firstName -Surname $lastName -Name $name -DisplayName $name -SamAccountName $name -Title $title -Department $department -AccountPassword (ConvertTo-SecureString "ABCdef123" -AsPlainText -Force) -Enabled $true
-    $userObject = Get-ADUser -Filter { SamAccountName -eq $name }
-    Move-ADObject -Identity $userObject -TargetPath $targetOU
+    # Create the user
+    New-ADUser -Name $name -DisplayName $name -SamAccountName $name -Title $title -Department $department -AccountPassword (ConvertTo-SecureString "ABCdef123" -AsPlainText -Force) -Enabled $true
 }
