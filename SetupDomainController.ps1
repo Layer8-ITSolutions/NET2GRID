@@ -1,3 +1,10 @@
+# Promote the server to a Domain Controller and create the forest
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
+Install-ADDSForest -DomainName $domainName -DomainNetbiosName $domainName -ForestMode Win2016 -DomainMode Win2016 -InstallDns -Force -SafeModeAdministratorPassword $dsrmPassword
+
+# Import the Active Directory module
+Import-Module ActiveDirectory
+
 # Install DNS Server role
 Install-WindowsFeature -Name DNS
 
@@ -192,7 +199,7 @@ $userInfo = @(
         Department = "Sales"
     }
 )
-# Loop through the user information and create the users
+# Create users accounts based on the provided information
 foreach ($user in $userInfo) {
     $name = $user.Name
     $function = $user.Function
