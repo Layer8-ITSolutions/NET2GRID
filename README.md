@@ -59,5 +59,5 @@ Please feel free to explore our documentation to understand our project workflow
 If you have any questions or need further information, please don't hesitate to contact us:
 - Gonçalo Cunha (https://www.linkedin.com/in/goncalocunha23/)
 - Leonardo Pinto (link to LinkedIn)
-- Ricardo Graça (link to LinkedIn)
+- Ricardo Graça (https://www.linkedin.com/in/ricardo-graca-cs/)
 - Tiago Godinho (https://www.linkedin.com/in/tgodinho13/)
