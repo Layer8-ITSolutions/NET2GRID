@@ -44,16 +44,6 @@ In this section, you will find important project documents, topologies, and the 
 
 We are using Jira (https://layer8.atlassian.net/jira/core/projects/NET/board) to manage tasks, assignments, and deadlines.
 
-## Standard Operating Procedures (SOPs)
-
-In this repository, you will find the following SOPs authored by our team:
-
-- [SOP Name 1](link to SOP 1)
-- [SOP Name 2](link to SOP 2)
-- [SOP Name 3](link to SOP 3)
-
-Please feel free to explore our documentation to understand our project workflow and standard operating procedures.
-
 ## Contact Us
 
 If you have any questions or need further information, please don't hesitate to contact us:
